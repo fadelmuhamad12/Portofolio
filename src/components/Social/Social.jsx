@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import SocialList from "./SocialList";
 
 const Social = () => {
   const links = [
@@ -19,7 +20,7 @@ const Social = () => {
       id: 2,
       child: (
         <>
-          LinkedIn <FaGithub size={30} />
+          Github <FaGithub size={30} />
         </>
       ),
       href: "https://github.com/fadelmuhamad12",
@@ -29,7 +30,7 @@ const Social = () => {
       id: 3,
       child: (
         <>
-          LinkedIn <HiOutlineMail size={30} />
+          Email <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:fadelmuhamad12.fm@gmail.com",
@@ -51,22 +52,7 @@ const Social = () => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, child, href }) => {
-          return (
-            <li className="flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px]  hover:rounded-md duration-500 ">
-              <a
-                key={id}
-                href={href}
-                className="flex justify-between items--center w-full text-white"
-              >
-                <>
-                  {child}
-                </>
-              </a>
-            </li>
-          );
-        })}
-
+        <SocialList list={links}/>
       </ul>
     </div>
   );
