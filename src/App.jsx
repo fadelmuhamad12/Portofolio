@@ -6,17 +6,18 @@ import Portofolio from "./components/Porto/Portofolio";
 import Social from "./components/Social/Social";
 import Tech from "./components/Tech/Tech";
 
-
 function App() {
   return (
     <>
-     <NavBar />
-     <Home />
-     <About />
-    <Portofolio />
-    <Tech />
-    <Contact />
+      <NavBar />
       
+      <Home />
+      <About />
+  
+      
+      <Portofolio />
+      <Tech />
+      <Contact />
 
       <Social />
     </>

@@ -12,14 +12,7 @@ const NavListHamburger = (props) => {
                 key={id}
                 className="px-4 cursor-pointer capitalize py-6 text-4xl text-gray-500"
               >
-                <Link
-                  onClick={() => setNavText(false)}
-                  to={link}
-                  smooth
-                  duration={300}
-                >
-                  {link}
-                </Link>
+                <Link to={link} smooth duration={300}> {link}  </Link>
               </li>
             );
           })}

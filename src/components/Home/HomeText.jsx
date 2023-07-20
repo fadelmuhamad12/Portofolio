@@ -4,7 +4,7 @@ import { TbSquareRoundedArrowRightFilled } from "react-icons/tb";
 const HomeText = () => {
   return (
     <div>
-      <h2 className="text-4xl font-bold sm:text-5xl text-white mt-64 lg:mt-0 md:mt-0  ">
+      <h2 className="text-4xl font-bold sm:text-5xl text-white mt-32 lg:mt-0 md:mt-0  ">
             Hello, <br />
             I'm A Front End Developer
           </h2>
